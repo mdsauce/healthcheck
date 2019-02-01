@@ -2,7 +2,7 @@ require 'rspec/core/rake_task'
 
 ENV['PARALLEL_SPLIT_TEST_PROCESSES'] = '3'
 
-PLATFORMS = %w[windows_10_edge mac_sierra_chrome mac_high_sierra_chrome windows_10_ff]
+PLATFORMS = %w[windows_10_edge mac_sierra mac_high_sierra windows_10_ff windows_10_chrome]
 
 PLATFORMS.each do |platform|
   desc "Run tests in parallel within suite using #{platform}"
@@ -13,32 +13,5 @@ PLATFORMS.each do |platform|
 end
 
 task :default do
-  Rake::Task[PLATFORMS.first].execute
+  Rake::Task[PLATFORMS.sample].execute
 end
-
-
-#
-# For Running Sauce Demo
-#
-
-# @success = true
-
-# PLATFORMS.each do |platform|
-#   task "#{platform}_demo" do
-#     ENV['PLATFORM'] = platform
-#     begin
-#       @result = system 'parallel_split_test spec'
-#     ensure
-#       @success &= @result
-#     end
-#   end
-# end
-
-# desc "Run multiple platforms simultaneously"
-# multitask sauce_demo: PLATFORMS.map { |p| "#{p}_demo" } do
-#   begin
-#     raise StandardError, "Tests failed!" unless @success
-#   ensure
-#     @success &= @result
-#   end
-# end

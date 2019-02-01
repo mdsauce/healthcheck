@@ -11,6 +11,10 @@ Get a report about what is available at app.saucelabs.com.
 	```
 	$ rake mac_sierra_chrome
 	```
+* Random platform from `platforms.yml`
+    ```
+    $ rake
+    ```
 
 ## Environment Setup
 1. Global Dependencies

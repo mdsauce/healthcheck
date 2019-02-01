@@ -43,6 +43,7 @@ Get a report about what is available at app.saucelabs.com.
 	```
 
 4. Environment Variables
+
     User must exist in Sauce Labs as we need credentials to login.  But you shouldn't use your current account as you could lock yourself out.
     ```
     HEALTHBAR_TEST_USER

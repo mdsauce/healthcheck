@@ -3,17 +3,13 @@ Get a report about what is available at app.saucelabs.com.
 
 ## Running Tests
 
-* Tests in Parallel:
+~~* Tests in Parallel:~~ TODO
 	```
-	$ rake parallel_run
+	~~$ rake parallel_run~~
 	```
-* Specific Configuration (see `/spec/support/platforms.yml` file)
+* Specific Configuration (see `/spec/platforms.yml` file) or run `rake --tasks`
 	```
 	$ rake mac_sierra_chrome
-	```
-* Demo Mode
-	```
-	$ rake sauce_demo
 	```
 
 ## Environment Setup
@@ -22,7 +18,7 @@ Get a report about what is available at app.saucelabs.com.
     * [Install Git](https://github.com/address-book/junit_tests#install-git)
     * Clone This Repo
     ```
-    $ git clone ruby-rspec-watir https://github.com/saucelabs-sample-test-frameworks/Ruby-RSpec-Watir.git
+    $ git clone git@github.com:mdsauce/healthcheck.git
     ```
     * Install bundler
     ```
@@ -42,3 +38,7 @@ Get a report about what is available at app.saucelabs.com.
 	$ bundle install
 	```
 
+4. Environment Variables
+    User must exist in Sauce Labs as we need someone to login as!
+    HEALTHBAR_TEST_USER
+    HEALTHBAR_USER_PW

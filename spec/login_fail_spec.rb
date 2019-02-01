@@ -1,13 +1,13 @@
 require "spec_helper"
 
 describe "Authentication" do
-  before { @browser.goto 'www.saucedemo.com'}
+  before { @browser.goto 'https://app.saucelabs.com/login'}
 
-  it "fails" do
-    @browser.text_field(data_test: 'username').set 'locked_out_user'
-    @browser.text_field(data_test: 'password').set 'secret_sauce'
+  it "fails w/ bad password" do
+    @browser.text_field(id: 'username').set 'ahgaks'
+    @browser.text_field(id: 'password').set 'junk password'
     @browser.button(type: 'submit').click
 
-    expect(@browser.button(class: 'error-button')).to exist
+    expect(@browser.div(class: 'alert')).to exist
   end
 end

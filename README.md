@@ -29,18 +29,18 @@ Get a report about what is available at app.saucelabs.com.
     $ gem install bundler
     ```
 
+3. Project Dependencies
+	* Install packages
+	```
+	$ bundle install
+	```
+
 2. Sauce Credentials
     * In the terminal export your Sauce Labs Credentials as environmental variables:
     ```
     $ export SAUCE_USERNAME=<your Sauce Labs username>
 	$ export SAUCE_ACCESS_KEY=<your Sauce Labs access key>
     ```
-
-3. Project Dependencies
-	* Install packages
-	```
-	$ bundle install
-	```
 
 4. Environment Variables
 

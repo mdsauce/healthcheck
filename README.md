@@ -3,10 +3,13 @@ Get a report about what is available at app.saucelabs.com.
 
 ## Running Tests
 
-~~* Tests in Parallel:~~ TODO
+TODO~~Tests in Parallel:~~
 	```
-	~~$ rake parallel_run~~
+	$ rake parallel_run
 	```
+TODO ~~Run a single spec:~~
+    ```
+    ```
 * Specific Configuration (see `/spec/platforms.yml` file) or run `rake --tasks`
 	```
 	$ rake mac_sierra_chrome

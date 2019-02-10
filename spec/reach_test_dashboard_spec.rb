@@ -3,8 +3,8 @@ require "spec_helper"
 describe "Web UI" do
   before { 
     @browser.goto 'https://app.saucelabs.com/login'
-    @browser.text_field(id: 'username').set ENV['HEALTHBAR_TEST_USER']
-    @browser.text_field(id: 'password').set ENV['HEALTHBAR_USER_PW']
+    @browser.text_field(id: 'username').set ENV['HEALTHCHECK_TEST_USER']
+    @browser.text_field(id: 'password').set ENV['HEALTHCHECK_USER_PW']
     @browser.button(type: 'submit').click
     sleep 6
 }

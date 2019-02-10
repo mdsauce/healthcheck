@@ -2,14 +2,7 @@
 Get a report about what is available at app.saucelabs.com.
 
 ## Running Tests
-TODO ~~Tests in Parallel:~~
-	
-    ```
-	$ rake parallel_run
-	```
-
-TODO ~~Run a single spec:~~
-
+* TODO ~~Run a single spec~~:
     ```
     $ rake spec login_fail_spec
     ```

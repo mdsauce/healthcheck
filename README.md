@@ -2,7 +2,6 @@
 Get a report about what is available at app.saucelabs.com.
 
 ## Running Tests
-
 TODO ~~Tests in Parallel:~~
 	
     ```
@@ -10,7 +9,9 @@ TODO ~~Tests in Parallel:~~
 	```
 
 TODO ~~Run a single spec:~~
+
     ```
+    $ rake spec login_fail_spec
     ```
 * Specific Configuration (see `/spec/platforms.yml` file) or run `rake --tasks`
 	```
@@ -21,7 +22,7 @@ TODO ~~Run a single spec:~~
     $ rake
     ```
 
-## Environment Setup
+## Environment and Setup
 1. Global Dependencies
     * [Install Ruby](http://watir.com/guides/ruby/)
     * [Install Git](https://github.com/address-book/junit_tests#install-git)
@@ -48,9 +49,11 @@ TODO ~~Run a single spec:~~
     ```
 
 4. Environment Variables
+    * Find or create a user you're willing to get locked out of Sauce Labs.  If there is a mistake in one of your tests you'll end up 
 
-    User must exist in Sauce Labs as we need credentials to login.  But you shouldn't use your current account as you could lock yourself out.
     ```
-    HEALTHBAR_TEST_USER
-    HEALTHBAR_USER_PW
+    HEALTHCHECK_TEST_USER
+    HEALTHCHECK_USER_PW
     ```
+
+

@@ -51,4 +51,6 @@ Get a report about what is available at app.saucelabs.com.
 
 
 ## Updating your local branch
-If you find your local branch missing the tests of the remote master branch just run something like `git fetch origin` to pull the latest commits to your local repo.
+If you find your local branch missing the tests of the remote master branch just run something like `git pull origin` to pull the latest commits to your local repo.
+
+Read more here: https://www.atlassian.com/git/tutorials/syncing/git-pull

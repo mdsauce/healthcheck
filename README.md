@@ -57,3 +57,5 @@ TODO ~~Run a single spec:~~
     ```
 
 
+## Updating your local branch
+If you find your local branch missing the tests of the remote master branch just run something like `git fetch origin` to pull the latest commits to your local repo.

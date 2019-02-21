@@ -27,11 +27,14 @@ RSpec.configure do |config|
   end
 
   config.before(:each) do |test|
-    opt = {name: test.full_description,
-           build: build_name,
-           url: "https://ondemand.saucelabs.com:443/wd/hub",
-           username: ENV['SAUCE_USERNAME'],
-           accessKey: ENV['SAUCE_ACCESS_KEY']}
+    opt = {
+      name: test.full_description,
+      build: build_name,
+      url: "https://ondemand.saucelabs.com:443/wd/hub",
+      username: ENV['SAUCE_USERNAME'],
+      accessKey: ENV['SAUCE_ACCESS_KEY'],
+      # tunnelIdentifier: 'myTestTunnel'
+    }
 
     opt.merge! platform
 

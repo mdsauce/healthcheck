@@ -1,10 +1,10 @@
 windows_10_edge:
-  selenium_version: '3.4.0'
+  selenium_version: '3.9.1'
   platform: Windows 10
   browser_name: edge
   version: 'latest'
 windows_10_ff:
-  selenium_version: '3.4.0'
+  selenium_version: '3.9.1'
   platform: Windows 10
   browser_name: firefox
   version: 'latest'
@@ -14,12 +14,12 @@ windows_10_chrome:
   version: 'latest'
 
 mac_sierra:
-  selenium_version: '3.4.0'
+  selenium_version: '3.9.1'
   platform: macOS 10.12
   browser_name: safari
   version: 'latest'
 mac_high_sierra:
-  selenium_version: '3.9'
+  selenium_version: '3.9.1'
   platform: macOS 10.13
   browser_name: chrome
   version: 'latest'

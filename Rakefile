@@ -1,4 +1,5 @@
 require 'rspec/core/rake_task'
+require 'faker'
 
 ENV['PARALLEL_SPLIT_TEST_PROCESSES'] = '3'
 
@@ -13,5 +14,6 @@ PLATFORMS.each do |platform|
 end
 
 task :default do
+  ENV['BUILD_NAME'] = Faker::Creature::Animal.name + Faker::Job.field
   Rake::Task[PLATFORMS.sample].execute
 end

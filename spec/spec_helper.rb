@@ -22,7 +22,7 @@ RSpec.configure do |config|
     elsif ENV['BUILD_TAG']
       ENV['BUILD_TAG']
     else
-      "Local Execution - #{Time.now.utc.to_i}"
+      "#{Time.now.utc.to_i}"
     end
   end
 

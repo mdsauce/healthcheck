@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe "Web UI" do
+describe "US VDC Web UI" do
   before { 
     @browser.goto 'https://app.saucelabs.com/login'
     @browser.text_field(id: 'username').set ENV['HEALTHCHECK_TEST_USER']

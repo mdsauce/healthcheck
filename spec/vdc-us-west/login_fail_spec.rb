@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe "Authentication" do
+describe "US VDC Authentication" do
   before { @browser.goto 'https://app.saucelabs.com/login'}
 
   it "fails w/ bad password" do

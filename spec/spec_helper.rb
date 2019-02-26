@@ -31,6 +31,7 @@ RSpec.configure do |config|
       name: test.full_description,
       build: build_name,
       url: "https://ondemand.saucelabs.com:443/wd/hub",
+      #url: "https://ondemand.eu-central-1.saucelabs.com/wd/hub",
       username: ENV['SAUCE_USERNAME'],
       accessKey: ENV['SAUCE_ACCESS_KEY'],
       # tunnelIdentifier: 'myTestTunnel'

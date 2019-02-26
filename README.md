@@ -2,15 +2,19 @@
 Get a report about what is available at app.saucelabs.com.
 
 ## Running Tests
-* TODO ~~Run a single spec~~:
+* Run a single spec or test:
     ```
-    $ rake spec login_fail_spec
+    $ rake test spec/some_suite
+    or
+    $ rake test spec/some_suite/some_test.rb
+    or
+    $ rake windows_10_ff spec/some_suite
     ```
 * Specific Configuration (see `/spec/platforms.yml` file) or run `rake --tasks`
 	```
 	$ rake mac_sierra_chrome
 	```
-* Random platform from `platforms.yml`
+* Random platform from `platforms.yml`.  Runs all tests.
     ```
     $ rake
     ```

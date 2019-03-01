@@ -39,3 +39,6 @@ build/
 # Created by .ignore support plugin (hsz.mobi)
 
 .idea/
+
+# Mac OS
+.DS_Store

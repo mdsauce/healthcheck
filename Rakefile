@@ -3,7 +3,7 @@ require 'faker'
 
 ENV['PARALLEL_SPLIT_TEST_PROCESSES'] = '3'
 
-PLATFORMS = %w[windows_10_edge mac_sierra mac_high_sierra windows_10_ff windows_10_chrome]
+PLATFORMS = %w[win_10_chrome_old win_10_edge mac_sierra mac_high_sierra win_10_ff win_10_chrome]
 ENV['BUILD_NAME'] = Faker::Creature::Animal.name + " " + Faker::Job.field + " " + Faker::App.semantic_version
 puts "starting build: #{ENV['BUILD_NAME']}"
 

@@ -10,18 +10,21 @@ describe "US VDC Web UI" do
 
 it "can reach Automated Tests" do
     expect(@browser.link(text: 'Automated tests').wait_until(&:present?)).to exist
+    expect(@browser.link(text: 'Automated tests')).to exist
     @browser.link(text: 'Automated tests').click
     expect(@browser.div(text: 'Showing:').wait_until(&:present?)).to exist
 end
 
 it "can reach Automated Builds" do
     expect(@browser.link(text: 'Automated Builds').wait_until(&:present?)).to exist
+    expect(@browser.link(text: 'Automated Builds')).to exist
     @browser.link(text: 'Automated Builds').click
     expect(@browser.div(text: 'Showing:').wait_until(&:present?)).to exist
 end
 
 it "can reach Live Tests" do
     expect(@browser.link(text: 'Live Tests').wait_until(&:present?)).to exist
+    expect(@browser.link(text: 'Live Tests')).to exist
     @browser.link(text: 'Live Tests').click
     expect(@browser.h3(text: 'Run Your First Manual Test').wait_until(&:present?)).to exist
 end

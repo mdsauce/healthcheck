@@ -19,10 +19,16 @@ end
 
 desc "Run all tests with a random platform, just use $ rake."
 task :default do
-  Rake::Task[PLATFORMS.sample].execute
+  puts "picking random platform"
+  platform_to_test = Rake::Task[PLATFORMS.sample]
+  puts "running platform: #{platform_to_test}"
+  platform_to_test.execute
 end
 
 desc "Run all specified tests like $ rake test spec/vdc-us-west."
 task :test do
-  Rake::Task[PLATFORMS.sample].execute
+  puts "picking random platform"
+  platform_to_test = Rake::Task[PLATFORMS.sample]
+  puts "running platform: #{platform_to_test}"
+  platform_to_test.execute
 end

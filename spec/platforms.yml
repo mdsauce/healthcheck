@@ -11,11 +11,6 @@ win_10_chrome_old:
   platform: WIN10
   browser_name: chrome
   version: 67
-mac_sierra:
-  selenium_version: '3.9.1'
-  platform: macOS 10.12
-  browser_name: safari
-  version: 'latest'
 mac_high_sierra:
   selenium_version: '3.9.1'
   platform: macOS 10.13

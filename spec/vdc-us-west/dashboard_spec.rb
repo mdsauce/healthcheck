@@ -20,5 +20,6 @@ describe "US VDC Web UI" do
 
     it "can reach Live Tests" do
         @browser.link(text: 'Live Tests').click
+        @browser.link(text: 'Live Tests').click
     end
 end

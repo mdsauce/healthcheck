@@ -1,8 +1,3 @@
-win_10_edge:
-  selenium_version: '3.9.1'
-  platform: Windows 10
-  browser_name: edge
-  version: 'latest'
 win_10_ff:
   selenium_version: '3.9.1'
   platform: Windows 10

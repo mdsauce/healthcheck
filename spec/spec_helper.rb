@@ -1,6 +1,6 @@
 require "watir"
 require 'sauce_whisk'
-Watir.default_timeout = 60
+Watir.default_timeout = 30
 
 RSpec.configure do |config|
   def platforms

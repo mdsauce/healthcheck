@@ -9,7 +9,7 @@ describe "US VDC Web UI" do
     }
 
     it "can reach Automated Tests" do
-        @browser.link(text: 'Automated tests').click
+        @browser.link(text: 'Automated Tests').click
         expect(@browser.div(text: 'Showing:')).to exist
     end
 

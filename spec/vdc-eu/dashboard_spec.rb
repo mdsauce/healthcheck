@@ -10,12 +10,12 @@ describe "EU VDC Web UI" do
 
     it "can reach Automated Tests" do
         @browser.link(text: 'Automated Tests').click
-        expect(@browser.div(text: 'Showing:')).to exist
+        expect(@browser.div(text: 'Filter:')).to exist
     end
 
     it "can reach Automated Builds" do
         @browser.link(text: 'Automated Builds').click
-        expect(@browser.div(text: 'Showing:')).to exist
+        expect(@browser.div(text: 'Filter:')).to exist
     end
 
     it "can reach Live Tests" do

@@ -35,7 +35,7 @@ RSpec.configure do |config|
       #url: "https://ondemand.eu-central-1.saucelabs.com/wd/hub",
       username: ENV['SAUCE_USERNAME'],
       accessKey: ENV['SAUCE_ACCESS_KEY'],
-      # tunnelIdentifier: 'myTestTunnel'
+      # tunnelIdentifier: 'main-tunnel-pool'
     }
 
     opt.merge! platform
